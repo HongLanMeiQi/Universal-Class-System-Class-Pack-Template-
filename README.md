@@ -1,0 +1,9 @@
+#Class Pack Creation Guide#
+To create a class pack for Universal Class System for other players to use, you need to download this template file and create following its settings. You may need to create prefab variants, otherwise the errors caused by modifying the template can be quite troublesome.  
+
+1. First, after downloading the template, create a new Unity project and import the Ravenfield Tools Pack into the project, then drag the template folder into Unity's folder window;  
+2. Select a prefab named "CLASS_PACK" and create prefab variants based on this template;  
+3. Prepare several Class icon sprites in advance, preferably with pure white patterns and transparent backgrounds;
+4. Edit the strings under Class_Name id in the Data Container component of all child objects in the prefab variant, set them to the desired Class names, and place the corresponding Class icon sprites into the Value with id "Class_Icon", repeat this process for other child objects;
+5. To make the class pack truly functional, you also need to edit the Mutator file, create a prefab, add a Mutator Content Mod component, copy or directly duplicate the Mutator component from the default class pack and paste it into the new Mutator, then modify or add corresponding Class configuration options, including weapon name strings, Class weight sliders, and Label content. Pay attention to the priority settings of these configuration options, as you don't want the configuration interface to look cluttered. **Also note that the naming of weapon configuration option ids must follow the format of <Your Class Name> + <weaponSlot>Weapon otherwise the script cannot read these configuration options and errors will occur.** It's best to refer to the configuration of the default class pack;
+6. After completing all the above steps, you just need to select your Mutator file and export the RFC file using Ctrl+E, and you have successfully created your first class pack.
