@@ -18,4 +18,4 @@ To create a class pack for Universal Class System for other players to use, you 
 3. 提前准备好几张Class图标精灵，尽量是纯白色图案和透明背景；
 4. 编辑预制件变体内所有子物体中的Data Container组件内的Class_Name id下的字符串，将其设置为你需要的Class的名称，在将对应的Class图标精灵放入id为Class_Icon的Value内，其他子物体亦如此操作；
 5. 要想兵种包真正可用，你还需要编辑Mutator文件，创建一个预制件，添加一个Mutator Content Mod组件，仿照或直接复制默认兵种包的Mutator组件并粘贴到新的Mutator里，然后修改或添加对应Class的配置选项，包括武器名称字符串，Class权重滑块以及Label内容，注意这些配置选项的优先级设置，毕竟你也不希望让配置界面看起来非常杂乱无章，**而且要注意，武器配置选项id的命名必须遵循"你的兵种名称" + Slot + Weapon 的格式，否则脚本无法读取这些配置选项而导致出错**，最好参考默认兵种包的配置；
-6. 完成以上所以步骤之后，你只需要选中你的Mutator文件然后Ctrl+E导出RFC文件，那样你就成功创建了你的第一个兵种包了。
+6. 完成以上所有步骤之后，你只需要选中你的Mutator文件然后Ctrl+E导出RFC文件，那样你就成功创建了你的第一个兵种包了。
