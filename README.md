@@ -9,7 +9,6 @@ To create a class pack for Universal Class System for other players to use, you 
 5. To make the class pack truly functional, you also need to edit the Mutator file, create a prefab, add a Mutator Content Mod component, copy or directly duplicate the Mutator component from the default class pack and paste it into the new Mutator, then modify or add corresponding Class configuration options, including weapon name strings, Class weight sliders, and Label content. Pay attention to the priority settings of these configuration options, as you don't want the configuration interface to look cluttered. **Also note that the naming of weapon configuration option ids must follow the format of "Your class name" + Slot + Weapon otherwise the script cannot read these configuration options and errors will occur.** It's best to refer to the configuration of the default class pack;
 6. After completing all the above steps, you just need to select your Mutator file and export the RFC file using Ctrl+E, and you have successfully created your first class pack.
 
-## 中文版
 # 兵种包创建教程
 要为Universal Class System创作兵种包供其他玩家游玩，你需要下载此模板文件，参照模板的设置进行创建。
 你可能需要创建预制件变体，不然修改模板主体造成的错误是相当麻烦的
